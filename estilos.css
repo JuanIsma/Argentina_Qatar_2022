@@ -72,26 +72,19 @@ body {
     border-radius: 15px; /* Redondea los bordes con un radio de 15px */
 }
 
-
-.container {
-    display: flex;
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px;
-    margin-top: -100px;
-    
-}
+ 
 
 .video-container {
     max-width: 800px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);   
     position: relative;
     margin-top: 100px;
     width: 900px; /* Asegura que el video ocupe todo el ancho del contenedor */
-   
+   height: 600px;
+   border: 4px solid #333;
+   background-color: #007bff; /* Color de fondo */
 }
 
 #tituloLista{
@@ -105,7 +98,11 @@ video {
     width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
     height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
     display: block;
+    
+     
 }
+
+ 
 
 
 
@@ -119,17 +116,25 @@ video {
 
 .controls {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
+    bottom: 1px; /* Ajusta la posición inferior */
+    left: 10px; /* Ajusta la posición izquierda */
+    right: 10px; /* Ajusta la posición derecha */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px;  /* Ajusta el padding */
     border-radius: 5px;
     transition: opacity 0.5s ease;
     opacity: 1;
+}
+
+
+ 
+
+/* Muestra los controles cuando el video está en foco o el usuario pasa el ratón sobre el video */
+.video-container:hover .controls {
+    display: flex;
 }
 
 .controls.hidden {
@@ -137,18 +142,13 @@ video {
     pointer-events: none;
 }
 
-.fullscreen .controls {
-    background: rgba(0, 0, 0, 0.8);
-    bottom: 20px;
-    padding: 15px;
-}
 
 button, input[type="range"] {
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 4px; /* Reduce el padding de los botones */
+    border-radius: 3px; /* Reduce el radio de los bordes */
     cursor: pointer;
-    font-size: 16px;
+    font-size: 13px;  /* Reduce el tamaño de la fuente */
     color: #fff;
     transition: background-color 0.3s, transform 0.2s;
 }
@@ -156,6 +156,7 @@ button, input[type="range"] {
 button {
     background-color: #007bff;
     border: 1px solid #007bff;
+    margin: 0 5px; /* Ajusta la separación entre botones */
 }
 
 button:hover {
@@ -166,8 +167,9 @@ button:hover {
 
 input[type="range"] {
     flex: 1;
-    margin: 0 10px;
+    margin: 0 10px; /* Reduce el margen a los lados del control deslizante */
     background: #555;
+    width: 200px; /* Ajusta el ancho del deslizador aquí */
 }
 
 input[type="range"]::-webkit-slider-thumb, 
@@ -179,7 +181,7 @@ input[type="range"]::-moz-range-thumb {
     width: 45%;
     max-height: 63vh;
     overflow-y: auto;
-    border: 1px solid #333;
+    border: 8px solid #333;
     border-radius: 10px;
     background-color: #222;
     margin-left: 40px;
@@ -202,7 +204,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .video-list li:hover {
-    background-color: #444;
+    background-color: #007bff;
 }
 
 .video-list span.flag {
@@ -226,7 +228,9 @@ footer p {
     font-size: 14px;
 }
 
-
+#currentTime{
+    margin-left: 40px;
+}
 
 /* Estilos para centrar y ajustar el tamaño del iframe */
 iframe#youtubeVideo {
@@ -238,14 +242,17 @@ iframe#youtubeVideo {
 }
 
 
-
-
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    margin-top: -100px; 
+     
 }
+
+
+  
 
 .row {
     width: 100%;
@@ -261,3 +268,5 @@ iframe#youtubeVideo {
     width: 10%;
     height: 15px;
 }
+
+ 
