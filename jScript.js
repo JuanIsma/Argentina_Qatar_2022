@@ -1,9 +1,3 @@
-// JavaScript: Los enlaces de los videos se cargan dinámicamente desde un archivo JSON. 
-// La lista de videos se construye al cargar la página, 
-// y los eventos de clic en los elementos de la lista cargan el video correspondiente en el reproductor. 
-// Además, se mantiene la funcionalidad existente de los controles del video.
-
-
 document.addEventListener("DOMContentLoaded", function() {
     const video = document.getElementById("videoPlayer");
     const playPauseBtn = document.getElementById("playPauseBtn");
@@ -111,16 +105,21 @@ document.addEventListener("DOMContentLoaded", function() {
         hideControlsTimeout = setTimeout(hideControls, 3000);
     }
 
-    document.addEventListener("fullscreenchange", function() {
+    function handleFullscreenChange() {
         if (document.fullscreenElement) {
-            controls.classList.add("hidden");
+            hideControls(); // Oculta los controles al entrar en pantalla completa
             video.addEventListener("mousemove", showControls);
+            video.addEventListener("mouseleave", resetHideControlsTimeout);
         } else {
-            controls.classList.remove("hidden");
+            showControls(); // Muestra los controles al salir de pantalla completa
             video.removeEventListener("mousemove", showControls);
+            resetHideControlsTimeout();
         }
-    });
+    }
 
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+
+    // Muestra controles al interactuar con el video o el contenedor
     videoContainer.addEventListener("mousemove", showControls);
     document.addEventListener("keydown", showControls);
     video.addEventListener("mousemove", showControls);
