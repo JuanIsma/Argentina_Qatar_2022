@@ -1,0 +1,263 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://statics.eleconomista.com.ar/2022/11/636189ae7a5de.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center;
+    background-color: #000;
+    color: #fff;
+ 
+}
+
+header {
+    background-color: #8C1D40;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #8C1D40;
+    z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+h3{
+    margin-left: 62px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+body {
+    margin-top: 60px; /* Ajusta el margen superior para el header fijo */
+}
+
+.main-container {
+    margin: 60px auto 20px; /* Espaciado superior, centrado horizontal, y espaciado inferior */
+    padding: 20px; /* Espaciado interno */
+    max-width: 1200px; /* Ancho máximo */
+    background-color: #8C1D40; /* Color de fondo */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible hasta el máximo */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho y alto */
+    border-radius: 15px; /* Redondea los bordes con un radio de 15px */
+}
+
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    margin-top: -100px;
+    
+}
+
+.video-container {
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+    position: relative;
+    margin-top: 100px;
+    width: 900px; /* Asegura que el video ocupe todo el ancho del contenedor */
+   
+}
+
+#tituloLista{
+    margin-top: 40px;
+    margin-left: 190px;
+}
+ 
+
+
+video {
+    width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
+    display: block;
+}
+
+
+
+#videoIntro{
+    
+        width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
+        height: auto; /* Asegura que el video ocupe toda la altura del contenedor */
+        display: block;
+     
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.controls.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fullscreen .controls {
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 20px;
+    padding: 15px;
+}
+
+button, input[type="range"] {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    transform: scale(1.05);
+}
+
+input[type="range"] {
+    flex: 1;
+    margin: 0 10px;
+    background: #555;
+}
+
+input[type="range"]::-webkit-slider-thumb, 
+input[type="range"]::-moz-range-thumb {
+    background-color: #007bff;
+}
+
+.video-list-container {
+    width: 45%;
+    max-height: 63vh;
+    overflow-y: auto;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #222;
+    margin-left: 40px;
+    margin-right: -86px;
+    margin-top: 100px;
+}
+
+.video-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.video-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+}
+
+.video-list li:hover {
+    background-color: #444;
+}
+
+.video-list span.flag {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #8C1D40;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #8C1D40;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+/* Estilos para centrar y ajustar el tamaño del iframe */
+iframe#youtubeVideo {
+    display: block;
+    margin: 0 auto;
+    width: 50%; /* Ajusta el ancho según lo necesites */
+    height: 245px; /* Ajusta la altura según lo necesites */
+    margin-top: -40px;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin: 20px 0;
+}
+.pdf-iframe {
+    width: 100%;
+    height: 918px;
+    border: none;
+    margin-top: 125px;
+}
+.youtube-iframe {
+    width: 10%;
+    height: 15px;
+}
