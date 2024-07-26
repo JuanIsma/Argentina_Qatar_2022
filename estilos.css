@@ -4,11 +4,10 @@ body {
     align-items: flex-start;
     height: 100vh;
     margin: 0;
-    background-image: url('https://statics.eleconomista.com.ar/2022/11/636189ae7a5de.jpg');
+ background-color: #555;
     background-size: cover;
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center;
-    background-color: #000;
     color: #fff;
  
 }
@@ -27,7 +26,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 15px;
 }
 
 h3{
@@ -97,21 +96,16 @@ body {
 video {
     width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
     height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
-    display: block;
-    
-     
+    display: block; 
 }
 
  
-
-
 
 #videoIntro{
     
         width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
         height: auto; /* Asegura que el video ocupe toda la altura del contenedor */
-        display: block;
-     
+        display: block; 
 }
 
 .controls {
@@ -129,8 +123,6 @@ video {
     opacity: 1;
 }
 
-
- 
 
 /* Muestra los controles cuando el video está en foco o el usuario pasa el ratón sobre el video */
 .video-container:hover .controls {
@@ -238,8 +230,9 @@ iframe#youtubeVideo {
     display: block;
     margin: 0 auto;
     width: 50%; /* Ajusta el ancho según lo necesites */
-    height: 245px; /* Ajusta la altura según lo necesites */
+    height: 355px; /* Ajusta la altura según lo necesites */
     margin-top: -40px;
+    margin-block-end: 50px;
 }
 
 
@@ -259,6 +252,7 @@ iframe#youtubeVideo {
 .row {
     width: 100%;
     margin: 20px 0;
+   
 }
 
 
@@ -271,7 +265,8 @@ iframe#youtubeVideo {
 
 .youtube-iframe {
     width: 10%;
-    height: 15px;
+    height: 10px;
+    
 }
 
 
