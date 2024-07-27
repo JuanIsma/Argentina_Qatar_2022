@@ -4,7 +4,7 @@ body {
     align-items: flex-start;
     height: 100vh;
     margin: 0;
- background-color: #555;
+ background-color: #222;
     background-size: cover;
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center;
@@ -45,7 +45,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 7px 20px;
     color: white;
     background-color: #333;
     border-radius: 5px;
@@ -103,8 +103,8 @@ video {
 
 #videoIntro{
     
-        width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
-        height: auto; /* Asegura que el video ocupe toda la altura del contenedor */
+        width: 120%; /* Asegura que el video ocupe todo el ancho del contenedor */
+       height: 114%; /* Asegura que el video ocupe toda la altura del contenedor */
         display: block; 
 }
 
@@ -137,7 +137,7 @@ video {
 
 button, input[type="range"] {
     border: none;
-    padding: 4px; /* Reduce el padding de los botones */
+    padding: 3px; /* Reduce el padding de los botones */
     border-radius: 3px; /* Reduce el radio de los bordes */
     cursor: pointer;
     font-size: 13px;  /* Reduce el tamaño de la fuente */
@@ -310,3 +310,35 @@ iframe#youtubeVideo {
         margin: 80px auto 20px;
         padding: 10px;
     }}
+
+
+ /* Ajustes específicos para iPhone 6 (ancho máximo de 375px) */
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 0.9rem;
+    }
+
+    nav ul li {
+        margin: 2px;
+    }
+
+    nav ul li a {
+        padding: 4px 6px;
+        font-size: 0.7rem;
+    }
+
+ 
+    video {
+        width: 100vw; /* Ocupa todo el ancho de la pantalla */
+        height: 100vh; /* Ocupa todo el alto de la pantalla */
+        margin: 0; /* Sin márgenes */
+        object-fit: cover; /* Ajusta el video para cubrir toda la pantalla */
+    }
+
+ 
+ 
+
+}
+
+
+

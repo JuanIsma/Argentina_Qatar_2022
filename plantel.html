@@ -22,101 +22,175 @@
         </header>
         <!-- Encabezado fin -->
 
-    <style>
-
-       
-   header {
-    background-color: #8C1D40;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-    margin-left: -9px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border-bottom: 1px solid #8C1D40;
-    z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body {
+              
+                margin-top: 60px; /* Para compensar el encabezado fijo */
+                margin-bottom: 50px; /* Para compensar el pie de página fijo */
+            }
+    
+            header {
+                background-color: #8C1D40;
+                color: #fff;
+                padding: 15px 20px;
+                text-align: center;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                border-bottom: 1px solid #8C1D40;
+                z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+            }
+    
+            header h1 {
+           margin: 0;
+             font-size: 15px;
 }
-
-header h1 {
-    margin: 0;
-    font-size: 15px;
-}
-
-h3{
-    margin-left: 62px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+    
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 2px; /* Espacio entre los botones */
+            }
+    
+            nav ul li {
+                margin: 12px;
+            }
+    
+            nav ul li a {
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 7px 20px;
     color: white;
     background-color: #333;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+    
+            nav ul li a:hover {
+                background-color: #555;
+            }
+    
+            footer {
+                background-color: #8C1D40;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                border-top: 1px solid #8C1D40;
+            }
+    
+            footer p {
+                margin: 0;
+                font-size: 14px;
+            }
+    
+            .grid-container {
+                display: grid;
+                margin-top: 200px;
+                margin-block-end: 200px;
+                grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+                gap: 30px;
+                padding: 20px;
+            }
+    
+            .grid-item {
+                border: 1px solid #ddd;
+                padding: 5px;
+                text-align: center;
+                border-radius: 5px;
+                
+            }
+    
+            .grid-item img {
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+    
+            .grid-item p {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: #333;
+            }
+    
 
-nav ul li a:hover {
-    background-color: #555;
-    color: #fff;
-}
-     
-footer {
-    background-color: #8C1D40;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    margin-left: -9px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-top: 1px solid #8C1D40;
-}
 
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-        .grid-container {
-            display: grid;
-            margin-top: -120px;
-            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-            gap: 30px;
-            padding: 300px;
-        }
-        .grid-item {
-            border: 1px solid #ddd;
-            padding: 5px; /* Menor padding */
-            text-align: center;
-            border-radius: 5px;
-            height: 440px; width: 400px;
-            align-items: center;
-        }
-        .grid-item img {
-            max-width: 100%;
-            
-            display: block;
-            margin: 0 auto;
-              
-        }
+            @media (max-width: 768px) {
+                header h1 {
+                    font-size: 1.2rem;
+                }
+    
+                nav ul li a {
+                    padding: 8px 10px;
+                    font-size: 0.9rem;
+                }
+    
+                .grid-container {
+                    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+                }
+            }
+    
 
 
-       .grid-container p{
-         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-         color: #333;
-        }
-    </style>
+            @media (max-width: 480px) {
+                header h1 {
+                    font-size: 1rem;
+                }
+    
+                nav ul li {
+                    margin: 3px;
+                }
+    
+                nav ul li a {
+                    padding: 5px 8px;
+                    font-size: 0.8rem;
+                }
+    
+                .grid-container {
+                    grid-template-columns: 1fr; /* 1 columna */
+                    padding: 10px;
+                    gap: 10px;
+                }
+    
+                .grid-item {
+                    height: auto;
+                }
+            }
+    
+            @media (max-width: 375px) {
+                header h1 {
+                    font-size: 0.9rem;
+                }
+    
+                nav ul li {
+                    margin: 2px;
+                }
+    
+                nav ul li a {
+                    padding: 4px 6px;
+                    font-size: 0.7rem;
+                }
+    
+                .grid-container {
+                    grid-template-columns: 1fr; /* 1 columna */
+                    padding: 10px;
+                    gap: 10px;
+                }
+    
+                .grid-item {
+                    height: auto;
+                }
+            }
+        </style>
 </head>
 <body>
     <div class="grid-container">
