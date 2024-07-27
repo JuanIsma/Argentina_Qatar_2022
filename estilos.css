@@ -30,8 +30,10 @@ header h1 {
 }
 
 h3{
-    margin-left: 62px;
+    margin-left: 32px;
 }
+
+ 
 
 nav ul {
     list-style-type: none;
@@ -88,7 +90,7 @@ body {
 
 #tituloLista{
     margin-top: 40px;
-    margin-left: 190px;
+    margin-left: 230px;
 }
  
 
@@ -234,25 +236,19 @@ iframe#youtubeVideo {
     margin-top: -40px;
     margin-block-end: 50px;
 }
-
-
+ 
 .container {
     display: flex;
     justify-content: space-between;
     width: 90%;
     max-width: 1200px;
     margin: 20px;
-    margin-top: -100px auto; 
-     
+    margin-top: -100px auto;   
 }
-
-
-  
-
+ 
 .row {
     width: 100%;
-    margin: 20px 0;
-   
+    margin: 20px 0; 
 }
 
 
@@ -268,6 +264,8 @@ iframe#youtubeVideo {
     height: 10px;
     
 }
+
+
 
 
 /* Responsive styles */

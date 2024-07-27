@@ -11,7 +11,41 @@
     overflow: hidden;
     background-color: #d13f63;
         }
-        </style> 
+       
+       
+        .video-container {
+            position: relative;
+            width: max-content;
+            margin: auto;
+        }
+        #videoIntro {
+            width: 100%;
+        }
+        #muteButton {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #saltoIntro{
+            position: absolute;
+            bottom: 10px;
+            left: 910px;
+            margin-block-end: 404px;
+            padding: 40px 40px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 40px;
+        }
+
+
+    </style>
 </head>
 <body>
         <!-- Encabezado inicio -->
@@ -24,6 +58,8 @@
                     <li><a href="fixture.html">Album</a></li>
                     <li><a href="plantel.html">Plantel</a></li>
                     <li><a href="#">Contacto</a></li>
+                     
+ 
                 </ul>
             </nav>
         </header>
@@ -31,13 +67,38 @@
  
         <!-- Contenedor con márgenes -->
        <!--  <iframe id="youtubeVideo" src="https://www.youtube.com/embed/IwzkfMmNMpM?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-      
-        <video id="videoIntro"   autoplay>
+       
+  
+        <video id="videoIntro"  autoplay  > 
         <source src="video/introQatar.mp4" type="video/mp4">
         <h1>ARGENTINA EN MUNDIAL DE QATAR 2022  </h1>
+         
         </video> 
-        
+        <button id="saltoIntro">Saltar Intro</button>
+        <button id="muteButton">Mute</button>
+  
+      <script>
+        //control de mute
+    const video = document.getElementById('videoIntro');
+    const muteButton = document.getElementById('muteButton');
 
+    muteButton.addEventListener('click', () => {
+        if (video.muted) {
+            video.muted = false;
+            muteButton.textContent = 'Mute';
+        } else {
+            video.muted = true;
+            muteButton.textContent = 'Unmute';
+    }
+});
+
+        // Redirigir a una página al hacer clic en "Saltar Intro"
+          const saltoIntroBtn = document.getElementById("saltoIntro");
+           saltoIntroBtn.addEventListener('click', function() {
+            window.location.href = 'listaVideos.html';
+            });
+
+        </script>
 
         
 

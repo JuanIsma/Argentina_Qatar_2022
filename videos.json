@@ -1,29 +1,36 @@
 {
     "videos": [
 
-        { "title": "Argentina vs Arabia Saudita - Fase de Grupo - 1t ", "src": "https://videos.footballia.net/uploads/video/source_file/50186/2022_Argentina_-_S._Arabia_-_1.mp4" },
-        { "title": "Argentina vs Arabia Saudita - Fase de Grupo - 2t    ", "src": "https://videos.footballia.net/uploads/video/source_file/50190/2022_Argentina_-_S._Arabia_-_2.mp4" },
+         
+        { "title": "-Resumen Copa América 2021", "src": "https://dl.dropbox.com/s/5pe76cddq7cp5iy/ARGENTINA%20CAMPEON%20de%20la%20COPA%20AMERICA%20-%20El%20Camino%20Del%20Campeon.mp4" },
+        
+        { "title": "-Resumen Finalisima 2022", "src": "https://dl.dropbox.com/s/ctpy5wk3602nju4/FINALLSIMA.mp4" },
 
-        { "title": "Argentina vs México - Fase de Grupo - 1t", "src": "https://videos.footballia.net/uploads/video/source_file/50210/2022ArgMex_1st.mp4" },
-        { "title": "Argentina vs México - Fase de Grupo - 2t", "src": "https://videos.footballia.net/uploads/video/source_file/50211/2022ArgMex_2nd.mp4" },
+        { "title": "-Resumen Argentina Qatar 2022", "src": "https://dl.dropbox.com/s/8zw5cmjfsz47z8f/ArgentinaElCamino_a_Campeon.mp4" },
 
-        { "title": "Argentina vs Polonia - Fase de Grupo - 1t", "src": "https://videos.footballia.net/uploads/video/source_file/50220/2022PolArg_1st.mp4" },
-        { "title": "Argentina vs Polonia - Fase de Grupo - 2t", "src": "https://videos.footballia.net/uploads/video/source_file/50221/2022PolArg_2nd.mp4" },
+        { "title": "-Argentina vs Arabia Saudita - Fase de Grupo - 1t ", "src": "https://videos.footballia.net/uploads/video/source_file/50186/2022_Argentina_-_S._Arabia_-_1.mp4" },
+        { "title": "-Argentina vs Arabia Saudita - Fase de Grupo - 2t    ", "src": "https://videos.footballia.net/uploads/video/source_file/50190/2022_Argentina_-_S._Arabia_-_2.mp4" },
+
+        { "title": "-Argentina vs México - Fase de Grupo - 1t", "src": "https://videos.footballia.net/uploads/video/source_file/50210/2022ArgMex_1st.mp4" },
+        { "title": "-Argentina vs México - Fase de Grupo - 2t", "src": "https://videos.footballia.net/uploads/video/source_file/50211/2022ArgMex_2nd.mp4" },
+
+        { "title": "-Argentina vs Polonia - Fase de Grupo - 1t", "src": "https://videos.footballia.net/uploads/video/source_file/50220/2022PolArg_1st.mp4" },
+        { "title": "-Argentina vs Polonia - Fase de Grupo - 2t", "src": "https://videos.footballia.net/uploads/video/source_file/50221/2022PolArg_2nd.mp4" },
      
-        { "title": "Argentina vs Australia - Octavos - 1t", "src": "https://videos.footballia.net/uploads/video/source_file/50224/2022ArgAus_1st.mp4" },
-        { "title": "Argentina vs Australia - Octavos - 2t", "src": "https://videos.footballia.net/uploads/video/source_file/50225/2022ArgAus_2nd.mp4" },
+        { "title": "-Argentina vs Australia - Octavos - 1t", "src": "https://videos.footballia.net/uploads/video/source_file/50224/2022ArgAus_1st.mp4" },
+        { "title": "-Argentina vs Australia - Octavos - 2t", "src": "https://videos.footballia.net/uploads/video/source_file/50225/2022ArgAus_2nd.mp4" },
 
-        { "title": "Argentina vs Paises Bajos - Cuartos - 1t", "src": "https://videos.footballia.net/uploads/video/source_file/50234/2022NedArg_1st.mp4" },
-        { "title": "Argentina vs Paises Bajos - Cuartos - 2t", "src": "https://videos.footballia.net/uploads/video/source_file/50235/2022NedArg_2nd.mp4" },
-        { "title": "Argentina vs Paises Bajos - Cuartos - Penales ", "src": "https://videos.footballia.net/uploads/video/source_file/50236/2022NedArg_ET_Pen.mp4" },
+        { "title": "-Argentina vs Paises Bajos - Cuartos - 1t", "src": "https://videos.footballia.net/uploads/video/source_file/50234/2022NedArg_1st.mp4" },
+        { "title": "-Argentina vs Paises Bajos - Cuartos - 2t", "src": "https://videos.footballia.net/uploads/video/source_file/50235/2022NedArg_2nd.mp4" },
+        { "title": "-Argentina vs Paises Bajos - Cuartos - Penales ", "src": "https://videos.footballia.net/uploads/video/source_file/50236/2022NedArg_ET_Pen.mp4" },
        
-        { "title": "Argentina vs Croacia - SemiFinal - 1t", "src": "https://videos.footballia.net/uploads/video/source_file/50237/2022ArgCro_1st.mp4" },
-        { "title": "Argentina vs Croacia - SemiFinal - 2t", "src": "https://videos.footballia.net/uploads/video/source_file/50238/2022ArgCro_2nd.mp4" },
+        { "title": "-Argentina vs Croacia - SemiFinal - 1t", "src": "https://videos.footballia.net/uploads/video/source_file/50237/2022ArgCro_1st.mp4" },
+        { "title": "-Argentina vs Croacia - SemiFinal - 2t", "src": "https://videos.footballia.net/uploads/video/source_file/50238/2022ArgCro_2nd.mp4" },
 
-        { "title": "Argentina vs Francia - Final - 1t", "src": "https://dl.dropbox.com/s/v78jyddba0vk69u/ARGFR1.mp4" },
-        { "title": "Argentina vs Francia - Final - 2t", "src": "https://dl.dropbox.com/s/q4vzbp80elojpsl/ARGFR2.mp4" },
-        { "title": "Argentina vs Francia - Final - Penales ", "src": "https://dl.dropbox.com/s/ztq0xsbf6vwhb86/ArgentinavsFranciapenales.mp4" },
-        { "title": "ARGENTINA CAMPEÓN - PREMIACIÓN ", "src": "https://dl.dropbox.com/s/4foxv0jfmeafy41/Entregadelacopadelmundo.mp4" }
+        { "title": "-Argentina vs Francia - Final - 1t", "src": "https://dl.dropbox.com/s/v78jyddba0vk69u/ARGFR1.mp4" },
+        { "title": "-Argentina vs Francia - Final - 2t", "src": "https://dl.dropbox.com/s/q4vzbp80elojpsl/ARGFR2.mp4" },
+        { "title": "-Argentina vs Francia - Final - Penales ", "src": "https://dl.dropbox.com/s/ztq0xsbf6vwhb86/ArgentinavsFranciapenales.mp4" },
+        { "title": "-ARGENTINA CAMPEÓN - PREMIACIÓN ", "src": "https://dl.dropbox.com/s/4foxv0jfmeafy41/Entregadelacopadelmundo.mp4" }
          
     ]
 }

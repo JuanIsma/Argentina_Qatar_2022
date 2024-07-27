@@ -1,3 +1,6 @@
+
+ 
+
 document.addEventListener("DOMContentLoaded", function() {
     const video = document.getElementById("videoPlayer");
     const playPauseBtn = document.getElementById("playPauseBtn");
@@ -129,12 +132,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
+ 
 //Redirigir la pagina al terminar de reproducir el video 
-setTimeout(function() {
+// setTimeout(function() {
+//     window.location.href = 'listaVideos.html';
+// }, 113000); // 113000 milisegundos = 1 minuto 53 segundos
+ 
+video.addEventListener('ended', function() {
     window.location.href = 'listaVideos.html';
-}, 113000); // 113000 milisegundos = 1 minuto 53 segundos
+});
+
+
+ 
+ 
  
  
