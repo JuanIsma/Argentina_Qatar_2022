@@ -127,3 +127,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     resetHideControlsTimeout();
 });
+
+
+
+
+
+//Redirigir la pagina al terminar de reproducir el video 
+setTimeout(function() {
+    window.location.href = 'listaVideos.html';
+}, 113000); // 113000 milisegundos = 1 minuto 53 segundos
+ 
+ 
