@@ -90,7 +90,7 @@ body {
 
 .video-list-container {
     width: 140%;
-    max-height: 49vh;
+    max-height: 53vh;
     overflow-y: auto;
     border: 8px solid #333;
     border-radius: 10px;
