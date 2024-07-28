@@ -6,6 +6,8 @@
     <title>Reproductor de Video</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="popup.js" defer></script>
+
 </head>
 <body>
         <!-- Encabezado inicio -->
@@ -17,7 +19,7 @@
                     <li><a href="listaVideos.html">Partidos de Argentina</a></li>
                     <li><a href="fixture.html">Album</a></li>
                     <li><a href="plantel.html">Plantel</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#" id="contactLink">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,7 +33,7 @@
  
       <div class="video-container">
  
-            <video id="videoPlayer" ></video>
+            <video id="videoPlayer" ></video>  
             <div class="controls" id="controls">
                 <div class="left-controls">
                     <button id="playPauseBtn">Play</button>
